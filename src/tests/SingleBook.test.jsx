@@ -24,13 +24,10 @@ describe("Verifica che il bordo del libro diventi rosso al click", () => {
 
     const bookCard = screen.getByTestId("book-card");
 
-    /
     expect(bookCard).toHaveStyle("border: 1px solid #ddd");
 
-    
     fireEvent.click(bookCard);
 
-    
     expect(bookCard).toHaveStyle("border: 3px solid red");
   });
 });
