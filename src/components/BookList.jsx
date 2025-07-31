@@ -17,6 +17,7 @@ const BookList = ({ books }) => {
         <Col xs={12} md={4} className="text-center">
           <Form.Group>
             <Form.Control
+              data-testid="search-input"
               type="search"
               placeholder="Cerca un libro"
               value={searchQuery}

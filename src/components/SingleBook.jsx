@@ -3,6 +3,7 @@ import { Card } from "react-bootstrap";
 const SingleBook = ({ book, isSelected, onSelect }) => {
   return (
     <Card
+      data-testid="book-card"
       onClick={() => onSelect(book.asin)}
       // Quando un SingleBook viene cliccato, chiama onSelect().
 
